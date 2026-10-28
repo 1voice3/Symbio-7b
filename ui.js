@@ -835,7 +835,7 @@ function closeSearch() { $('#searchwrap').classList.remove('show'); }
 
 /* ---------------- manual viewer (PDF.js) ---------------- */
 const MV = { pdf: null, page: 1, q: '', scale: 1, matches: [], matchIdx: 0, rendering: false, returnHash: null };
-pdfjsLib.GlobalWorkerOptions.workerSrc = 'assets/pdfjs/pdf.worker.min.js';
+pdfjsLib.GlobalWorkerOptions.workerSrc = 'pdf.worker.min.js';
 
 async function openManual(page, q) {
   MV.returnHash = (location.hash && !location.hash.startsWith('#/manual')) ? location.hash : (MV.returnHash || '#/home');

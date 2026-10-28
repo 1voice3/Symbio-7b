@@ -14,7 +14,11 @@ WHAT'S IN THIS PACKAGE
   README.txt        This file
   manual.pdf       The Symbio 700 manual (225 pages) used by the
                     built-in manual viewer
-  assets/           App code, search data, PDF viewer library, icon
+  app.js, ui.js,    App code
+  data.js           Search data + manual text index
+  icon.png         Home Screen icon
+  pdf.min.js,      PDF viewer library (do not rename)
+  pdf.worker.min.js
 
 QUICK START (NO UPLOAD NEEDED)
 ------------------------------
@@ -39,12 +43,12 @@ like a regular app.
 3. On the repository page, click "uploading an existing file"
    (or "+ > Upload files").
 
-4. Drag in EVERYTHING from this zip (unzip/extract it first — do NOT
-   upload the .zip file itself; GitHub Pages needs the loose files):
+4. Drag in EVERYTHING from this zip (all 9 files — no folders, and do NOT
+   upload the .zip file itself):
    - index.html
    - README.txt
    - manual.pdf
-   - the assets folder (drag the whole folder)
+   - app.js, ui.js, data.js, icon.png, pdf.min.js, pdf.worker.min.js
 
 5. Click "Commit changes" and wait for the upload to finish
    (manual.pdf is about 9 MB, so give it a minute).
